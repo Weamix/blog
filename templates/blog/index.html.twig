@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Yo BlogController!{% endblock %}
+
+{% block body %}
+{# <style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Yo {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/mnt/c/users/maxim/desktop/app/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/mnt/c/users/maxim/desktop/app/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>
+</div> #}
+
+<section class="articles">
+    <article>
+        <h2>titre de l'article</h2>
+        <div class="metadata">Ecrit le 14/09/2019 à 19:00</div>
+        <div class="content">
+            <img src="http://placehold.it/350x200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa, illo est possimus deleniti dolorum.</p>
+            <p>Voluptatibus ducimus modi fuga consequuntur dolores, delectus repellat odit, quos exercitationem saepe a minima voluptate?</p>
+            <a href="{{path('blog_show')}}" class="btn btn-primary">Lire la suite</a>
+        </div>
+    </article>
+    <article>
+        <h2>titre de l'article</h2>
+        <div class="metadata">Ecrit le 14/09/2019 à 19:00</div>
+        <div class="content">
+            <img src="http://placehold.it/350x200" alt="">
+            <p>Culpa, nobis itaque. Quibusdam sed quaerat corporis consequuntur dolore maxime aspernatur dolor vitae architecto cupiditate.</p>
+            <p>Repellendus debitis modi neque praesentium culpa repellat. Omnis fugiat, sunt ea tempore aut vel suscipit.</p>
+            <a href="{{path('blog_show')}}" class="btn btn-primary">Lire la suite</a>
+        </div>
+    </article>
+    <article>
+        <h2>titre de l'article</h2>
+        <div class="metadata">Ecrit le 14/09/2019 à 19:00</div>
+        <div class="content">
+            <img src="http://placehold.it/350x200" alt="">
+            <p>Numquam, perferendis. Culpa impedit doloribus velit, vel deleniti architecto, laboriosam commodi expedita at quos quam!</p>
+            <p>Cupiditate rerum odit iste odio quo modi deleniti itaque molestias praesentium! Est, asperiores? Id, atque.</p>
+            <a href="{{path('blog_show')}}" class="btn btn-primary">Lire la suite</a>
+        </div>
+    </article>
+</section>
+
+{% endblock %}
+
